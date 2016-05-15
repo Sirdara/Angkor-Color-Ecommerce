@@ -1,0 +1,15 @@
+﻿Generated model file: AngkorColorModel.edmx.
+Loading metadata from the database took 00:00:03.6530172.
+Generating the model took 00:00:02.8430666.
+Added the connection string to the Web.Config file.
+Generated model file: AngkorColorModel.edmx.
+Loading metadata from the database took 00:00:00.7310011.
+Generating the model took 00:00:01.4065543.
+Generated model file: AngkorColorModel.edmx.
+Loading metadata from the database took 00:00:01.2520792.
+Generating the model took 00:00:00.8765333.
+Added the connection string to the Web.Config file.
+Generated model file: AngkorColorModel.edmx.
+Loading metadata from the database took 00:00:01.0095626.
+Generating the model took 00:00:00.6253318.
+sdfsdf
