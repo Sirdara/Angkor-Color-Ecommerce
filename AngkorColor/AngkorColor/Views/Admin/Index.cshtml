@@ -1,0 +1,173 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout_Admin.cshtml";
+}
+
+<h2>Dashboard</h2>
+<div class="StoreStatisstic">
+    <h4>Store Statistice</h4>
+    <div class="OrderSummary">
+        <h6>Order Summary</h6>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Status</th>
+                    <th>Today</th>
+                    <th>This Week</th>
+                    <th>This Month</th>
+                    <th>This Year</th>
+                    <th>All Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Padding</td>
+                    <td>$10.00</td>
+                    <td>$100.00</td>
+                    <td>$1000.00</td>
+                    <td>$10000.00</td>
+                    <td>$11110</td>
+                </tr>
+                <tr>
+                    <td>Precessing</td>
+                    <td>$10.00</td>
+                    <td>$100.00</td>
+                    <td>$1000.00</td>
+                    <td>$10000.00</td>
+                    <td>$11110</td>
+                </tr>
+                <tr>
+                    <td>Completing</td>
+                    <td>$10.00</td>
+                    <td>$100.00</td>
+                    <td>$1000.00</td>
+                    <td>$10000.00</td>
+                    <td>$11110</td>
+                </tr>
+            </tbody>
+        </table>
+    </div> @*order Summry*@
+    <div class="PopularSearch">
+        <h6>Popalar Search Key</h6>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>
+                        Keyword
+                    </th>
+                    <th>
+                        Count
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ថ្នាំលាបជញ្ជាំ</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>ថ្នាំការពារទឹកភ្លៀង</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>ថ្នាំបាញ់</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>ថ្នាំការពារច្រែះ</td>
+                    <td>13</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="RegisterCustomer">
+        <h6>Register Customer</h6>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>
+                        Period
+                    </th>
+                    <th>
+                        Count
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Last 7 days</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Last 14 days</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Last Month</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>Last Year</td>
+                    <td>100</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="BestSellerByAmount">
+        <h6>Best Seller By Amount</h6>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>
+                        Products
+                    </th>
+                    <th>
+                        Quality
+                    </th>
+                    <th>
+                        Amount
+                    </th>
+                    <th>
+                        View
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ATM GLOSS ENAMEL</td>
+                    <td>10</td>
+                    <td>$ 3000</td>
+                    <td><a href="#">View</a></td>
+                </tr>
+                <tr>
+                    <td>U90</td>
+                    <td>4</td>
+                    <td>$ 2000</td>
+                    <td><a href="#">View</a></td>
+                </tr>
+                <tr>
+                    <td>Kansai</td>
+                    <td>8</td>
+                    <td>$ 1000</td>
+                    <td><a href="#">View</a></td>
+                </tr>
+                <tr>
+                    <td>Campaint</td>
+                    <td>100</td>
+                    <td>$ 599</td>
+                    <td><a href="#">View</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+</div>
+
+<canvas width="600" height="440" id="canvas_picker"></canvas>
+<div id="hex">HEX: <input type="text"></input></div>
+<div id="rgb">RGB: <input type="text"></input></div>
+

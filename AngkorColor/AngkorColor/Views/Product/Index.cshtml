@@ -1,0 +1,75 @@
+﻿@*@model IEnumerable<AngkorColor.Product>*@
+@model  PagedList.IPagedList<AngkorColor.Product>
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = "Index";
+    
+}
+@{Layout = "~/Views/Shared/_Layout_Admin.cshtml";}
+<h3>Crreate New product</h3>
+<p>
+   @Html.ActionLink("Create New", "Create", null, new { @class = "btn btn-primary" })
+</p>
+
+    <table class="table">
+        <tr>
+            <th>
+                @Html.Label("Code")
+            </th>
+            <th>
+                @Html.Label("Product")
+            </th>
+            <th>
+
+            </th>
+            <th>
+
+            </th>
+            <th>
+
+            </th>
+            <th>
+                @Html.Label("Brand")
+            </th>
+            <th>
+                @Html.Label("Category")
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProductCode)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProductName)
+                </td>
+                <td>
+                    <span style="color:red">$  @item.Price </span>
+                </td>
+                <td>
+                    @item.DateCreated.Value.ToString("dd-MMM-yyyy")
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DateModified)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Brand.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Category.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProductType.Desc)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.ID }, new { @class = "btn btn-success" })
+                    @Html.ActionLink("Details", "Details", new { id = item.ID }, new { @class = "btn btn-primary" })
+                    @Html.ActionLink("Delete", "Delete", new { id = item.ID }, new { @class = "btn btn-danger" })
+                </td>
+            </tr>
+        }
+
+    </table>

@@ -1,0 +1,22 @@
+﻿@model AngkorColor.Product
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    
+}
+<link href="~/Content/Style.css" rel="stylesheet" />
+
+<div class="ProDetail">
+    <div class="ProPic">
+        <h4>@Model.ProductName</h4>
+        <img src="~/content/images/Products/@Model.Picture" alt="...">
+    </div>
+    <div class="ProDec">
+        <span>Price:  @Model.Price </span>
+    </div>
+</div>
+
+<p>
+    @Html.ActionLink("Back", "Index")
+</p>

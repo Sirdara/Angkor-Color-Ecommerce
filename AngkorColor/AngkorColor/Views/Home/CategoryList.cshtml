@@ -1,0 +1,7 @@
+﻿@model  PagedList.IPagedList<AngkorColor.Category>
+@using PagedList.Mvc;
+
+@foreach (var item in Model)
+{
+    @item.Name
+}

@@ -1,0 +1,119 @@
+﻿@model AngkorColor.Product
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout_Admin.cshtml";
+}
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/bootstrap")
+}
+@*<script language="javascript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>*@
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script language="javascript" type="text/javascript">
+    $(function () {
+        $("#Colors").hide();
+        $("#SelectColor").click(function () {
+            $.get('@Url.Action("FetchColors", "Product")', null, function (data) {
+                $("#Colors").html(eval(data));
+            });
+            $("#Colors").toggle();
+        });
+        $("td").live("mouseover", (function () {
+            $("#Sample").css("background-color", $(this).css("background-color"));
+            $(this).css("cursor", "pointer");
+        }));
+        $("td").live("click", function () {
+            $("SelectedColor").val($(this).attr("bgcolor"));
+        });
+    });
+
+
+</script>
+
+<h2>Create new products</h2>
+<input type="text" id="SelectedColor" name="SelectedColor" readonly="readonly" />
+<img src="~/Content/Images/btn/cp_btn.gif" alt="Pick a color" align="middle"  id="SelectColor" />
+<span id="Sample">&nbsp;&nbsp;&nbsp;&nbsp;</span><br /><br />
+<div id="Colors">
+    <div id="blue"></div>
+</div>
+<form action="" method="post" enctype="multipart/form-data">
+    @Html.AntiForgeryToken()
+    <div class="form-horizontal">
+        @Html.ValidationSummary(true)
+        <div class="form-group">
+            <div class="form-group">
+                @Html.LabelFor(model => model.ProductName, new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.ProductName)
+                    @Html.ValidationMessageFor(model => model.ProductName)
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.ProductCode, new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.ProductCode)
+                    @Html.ValidationMessageFor(model => model.ProductCode)
+                </div>
+            </div>
+
+        
+                @Html.LabelFor(model => model.ProductDesc, new { @class = "control-label col-md-2" })
+               
+                       @Html.TextAreaFor(model => model.ProductDesc, new { cols = "200", rows = "15" })
+                
+         
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.ProductBrand, "ProductBrand", new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.DropDownList("ProductBrand", String.Empty)
+                    @Html.ValidationMessageFor(model => model.ProductBrand)
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.ProductType, "Type", new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.DropDownList("ProductType", String.Empty)
+                    @Html.ValidationMessageFor(model => model.ProductType)
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.ProductCategory, "ProductCategory", new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.DropDownList("ProductCategory", String.Empty)
+                    @Html.ValidationMessageFor(model => model.ProductCategory)
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Price, new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Price)
+                    @Html.ValidationMessageFor(model => model.Price)
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-10">
+                <input type="file" name="Image" />
+                </div> 
+            </div> 
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Upload" class="btn btn-success" />
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@*@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    
+}*@

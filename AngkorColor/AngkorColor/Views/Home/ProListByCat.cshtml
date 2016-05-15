@@ -1,0 +1,19 @@
+﻿@model IEnumerable<AngkorColor.Product>
+
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-xs-4 col-md-3">
+            <a href="@Url.Action("Details", "Home", new { id = item.ID })" class="thumbnail">
+                <img src="~/content/images/Products/@item.Picture" alt="...">
+                <div class="caption">
+                    <h4>@item.ProductName</h4>
+                    <span style="color:red">$ @item.Price</span> <br />
+                    <span style="color:gray">@item.Brand.Description</span>
+                    <span style="color:gray">@item.ProductCode</span>
+                </div>
+            </a>
+        </div>
+    }
+</div>
