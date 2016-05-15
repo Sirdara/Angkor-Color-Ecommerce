@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AngkorColorEcommerceModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Brands">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" />
+    <Property Name="DateCreated" Type="date" />
+    <Property Name="DateModified" Type="date" />
+    <Property Name="DateDeleted" Type="date" />
+  </EntityType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="DateCreated" Type="datetime" />
+    <Property Name="DateModified" Type="date" />
+    <Property Name="DateDeleted" Type="date" />
+    <Property Name="UserCreated" Type="nvarchar" MaxLength="50" />
+    <Property Name="UserModified" Type="nvarchar" MaxLength="50" />
+    <Property Name="UserDeleted" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Color">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Code" Type="char" MaxLength="6" />
+  </EntityType>
+  <EntityType Name="Products">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ProductName" Type="nvarchar" MaxLength="50" />
+    <Property Name="ProductCode" Type="varchar" MaxLength="20" />
+    <Property Name="ProductDesc" Type="nvarchar(max)" />
+    <Property Name="ProductBrand" Type="uniqueidentifier" />
+    <Property Name="ProductCategory" Type="uniqueidentifier" />
+    <Property Name="Color" Type="uniqueidentifier" />
+    <Property Name="Price" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="DateCreated" Type="date" />
+    <Property Name="DateModified" Type="date" />
+    <Property Name="DateDeleted" Type="date" />
+    <Property Name="Picture" Type="varchar(max)" />
+    <Property Name="Type" Type="uniqueidentifier" />
+    <Property Name="Size" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="ProductType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Desc" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="20" />
+    <Property Name="Email" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="RecoveryEmail" Type="nvarchar" MaxLength="50" />
+    <Property Name="DateCreated" Type="date" />
+    <Property Name="DateModified" Type="date" />
+    <Property Name="DateDeleted" Type="date" />
+    <Property Name="role" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <Association Name="FK_Products_Brands">
+    <End Role="Brands" Type="Self.Brands" Multiplicity="0..1" />
+    <End Role="Products" Type="Self.Products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Brands">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Products">
+        <PropertyRef Name="ProductBrand" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Products_Category">
+    <End Role="Category" Type="Self.Category" Multiplicity="0..1" />
+    <End Role="Products" Type="Self.Products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Products">
+        <PropertyRef Name="ProductCategory" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Products_Color">
+    <End Role="Color" Type="Self.Color" Multiplicity="0..1" />
+    <End Role="Products" Type="Self.Products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Color">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Products">
+        <PropertyRef Name="Color" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Products_ProductType">
+    <End Role="ProductType" Type="Self.ProductType" Multiplicity="0..1" />
+    <End Role="Products" Type="Self.Products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductType">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Products">
+        <PropertyRef Name="Type" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="AngkorColorEcommerceModelStoreContainer">
+    <EntitySet Name="Brands" EntityType="Self.Brands" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Category" EntityType="Self.Category" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Color" EntityType="Self.Color" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Products" EntityType="Self.Products" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProductType" EntityType="Self.ProductType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Products_Brands" Association="Self.FK_Products_Brands">
+      <End Role="Brands" EntitySet="Brands" />
+      <End Role="Products" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Products_Category" Association="Self.FK_Products_Category">
+      <End Role="Category" EntitySet="Category" />
+      <End Role="Products" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Products_Color" Association="Self.FK_Products_Color">
+      <End Role="Color" EntitySet="Color" />
+      <End Role="Products" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Products_ProductType" Association="Self.FK_Products_ProductType">
+      <End Role="ProductType" EntitySet="ProductType" />
+      <End Role="Products" EntitySet="Products" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

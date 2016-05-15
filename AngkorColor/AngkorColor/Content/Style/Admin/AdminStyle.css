@@ -1,0 +1,49 @@
+﻿.StoreStatisstic {
+    width:100%;
+    height:auto;
+    float:left;
+    position:relative;
+    margin:10px 5px;
+    border: 1px solid #808080;
+    padding:10px;
+    border-radius:2px;
+}
+
+.OrderSummary {
+    width:100%;
+    position:relative;
+    float:left;
+}
+.StoreStatisstic h6{
+    color:#FF8C00;
+    font-weight:bold;  
+}
+
+.PopularSearch {
+    width:400px;
+    height:auto;
+    position:relative;
+    float:left;
+}
+
+.RegisterCustomer{
+    width:300px;
+    height:auto;
+    float:left;
+    margin-left:30px;
+}
+
+.BestSellerByAmount {
+    width:358px;
+    height:auto;
+    float:left;
+    margin-left:30px;
+}
+
+#blue{
+    width:15px;
+    height:15px;
+    float:left;
+    position:relative;
+    background-color:blue;
+}

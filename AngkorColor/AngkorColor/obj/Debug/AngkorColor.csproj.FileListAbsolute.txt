@@ -1,0 +1,117 @@
+D:\NU\Thesis\AngkorColor\AngkorColor\bin\AngkorColor.dll.config
+D:\NU\Thesis\AngkorColor\AngkorColor\bin\AngkorColor.dll
+D:\NU\Thesis\AngkorColor\AngkorColor\bin\AngkorColor.pdb
+D:\NU\Thesis\AngkorColor\AngkorColor\bin\Antlr3.Runtime.dll
+D:\NU\Thesis\AngkorColor\AngkorColor\bin\EntityFramework.dll
+D:\NU\Thesis\AngkorColor\AngkorColor\bin\EntityFramework.SqlServer.dll
+D:\NU\Thesis\AngkorColor\AngkorColor\bin\Microsoft.AspNet.Identity.Core.dll
+D:\NU\Thesis\AngkorColor\AngkorColor\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\NU\Thesis\AngkorColor\AngkorColor\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\NU\Thesis\AngkorColor\AngkorColor\bin\Microsoft.Owin.dll
+D:\NU\Thesis\AngkorColor\AngkorColor\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\NU\Thesis\AngkorColor\AngkorColor\bin\Microsoft.Owin.Security.Cookies.dll
+D:\NU\Thesis\AngkorColor\AngkorColor\bin\Microsoft.Owin.Security.dll
+D:\NU\Thesis\AngkorColor\AngkorColor\bin\Microsoft.Owin.Security.Facebook.dll
+D:\NU\Thesis\AngkorColor\AngkorColor\bin\Microsoft.Owin.Security.Google.dll
+D:\NU\Thesis\AngkorColor\AngkorColor\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\NU\Thesis\AngkorColor\AngkorColor\bin\Microsoft.Owin.Security.OAuth.dll
+D:\NU\Thesis\AngkorColor\AngkorColor\bin\Microsoft.Owin.Security.Twitter.dll
+D:\NU\Thesis\AngkorColor\AngkorColor\bin\Microsoft.Web.Infrastructure.dll
+D:\NU\Thesis\AngkorColor\AngkorColor\bin\Newtonsoft.Json.dll
+D:\NU\Thesis\AngkorColor\AngkorColor\bin\Owin.dll
+D:\NU\Thesis\AngkorColor\AngkorColor\bin\System.Web.Helpers.dll
+D:\NU\Thesis\AngkorColor\AngkorColor\bin\System.Web.Mvc.dll
+D:\NU\Thesis\AngkorColor\AngkorColor\bin\System.Web.Optimization.dll
+D:\NU\Thesis\AngkorColor\AngkorColor\bin\System.Web.Razor.dll
+D:\NU\Thesis\AngkorColor\AngkorColor\bin\System.Web.WebPages.Deployment.dll
+D:\NU\Thesis\AngkorColor\AngkorColor\bin\System.Web.WebPages.dll
+D:\NU\Thesis\AngkorColor\AngkorColor\bin\System.Web.WebPages.Razor.dll
+D:\NU\Thesis\AngkorColor\AngkorColor\bin\WebGrease.dll
+D:\NU\Thesis\AngkorColor\AngkorColor\bin\System.Web.Helpers.xml
+D:\NU\Thesis\AngkorColor\AngkorColor\bin\System.Web.Mvc.xml
+D:\NU\Thesis\AngkorColor\AngkorColor\bin\System.Web.Optimization.xml
+D:\NU\Thesis\AngkorColor\AngkorColor\bin\System.Web.Razor.xml
+D:\NU\Thesis\AngkorColor\AngkorColor\bin\System.Web.WebPages.xml
+D:\NU\Thesis\AngkorColor\AngkorColor\bin\System.Web.WebPages.Deployment.xml
+D:\NU\Thesis\AngkorColor\AngkorColor\bin\System.Web.WebPages.Razor.xml
+D:\NU\Thesis\AngkorColor\AngkorColor\bin\Newtonsoft.Json.xml
+D:\NU\Thesis\AngkorColor\AngkorColor\bin\Antlr3.Runtime.pdb
+D:\NU\Thesis\AngkorColor\AngkorColor\bin\EntityFramework.xml
+D:\NU\Thesis\AngkorColor\AngkorColor\bin\EntityFramework.SqlServer.xml
+D:\NU\Thesis\AngkorColor\AngkorColor\bin\Microsoft.AspNet.Identity.Core.xml
+D:\NU\Thesis\AngkorColor\AngkorColor\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\NU\Thesis\AngkorColor\AngkorColor\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\NU\Thesis\AngkorColor\AngkorColor\bin\Microsoft.Owin.xml
+D:\NU\Thesis\AngkorColor\AngkorColor\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\NU\Thesis\AngkorColor\AngkorColor\bin\Microsoft.Owin.Security.xml
+D:\NU\Thesis\AngkorColor\AngkorColor\bin\Microsoft.Owin.Security.Facebook.xml
+D:\NU\Thesis\AngkorColor\AngkorColor\bin\Microsoft.Owin.Security.Cookies.xml
+D:\NU\Thesis\AngkorColor\AngkorColor\bin\Microsoft.Owin.Security.OAuth.xml
+D:\NU\Thesis\AngkorColor\AngkorColor\bin\Microsoft.Owin.Security.Google.xml
+D:\NU\Thesis\AngkorColor\AngkorColor\bin\Microsoft.Owin.Security.Twitter.xml
+D:\NU\Thesis\AngkorColor\AngkorColor\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\NU\Thesis\AngkorColor\AngkorColor\obj\Debug\AngkorColor.dll
+D:\NU\Thesis\AngkorColor\AngkorColor\obj\Debug\AngkorColor.pdb
+D:\NU\New folder\AngkorColor\AngkorColor\bin\AngkorColor.dll.config
+D:\NU\New folder\AngkorColor\AngkorColor\bin\AngkorColor.dll
+D:\NU\New folder\AngkorColor\AngkorColor\bin\AngkorColor.pdb
+D:\NU\New folder\AngkorColor\AngkorColor\bin\Antlr3.Runtime.dll
+D:\NU\New folder\AngkorColor\AngkorColor\bin\EntityFramework.dll
+D:\NU\New folder\AngkorColor\AngkorColor\bin\EntityFramework.SqlServer.dll
+D:\NU\New folder\AngkorColor\AngkorColor\bin\Microsoft.AspNet.Identity.Core.dll
+D:\NU\New folder\AngkorColor\AngkorColor\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\NU\New folder\AngkorColor\AngkorColor\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\NU\New folder\AngkorColor\AngkorColor\bin\Microsoft.Owin.dll
+D:\NU\New folder\AngkorColor\AngkorColor\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\NU\New folder\AngkorColor\AngkorColor\bin\Microsoft.Owin.Security.Cookies.dll
+D:\NU\New folder\AngkorColor\AngkorColor\bin\Microsoft.Owin.Security.dll
+D:\NU\New folder\AngkorColor\AngkorColor\bin\Microsoft.Owin.Security.Facebook.dll
+D:\NU\New folder\AngkorColor\AngkorColor\bin\Microsoft.Owin.Security.Google.dll
+D:\NU\New folder\AngkorColor\AngkorColor\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\NU\New folder\AngkorColor\AngkorColor\bin\Microsoft.Owin.Security.OAuth.dll
+D:\NU\New folder\AngkorColor\AngkorColor\bin\Microsoft.Owin.Security.Twitter.dll
+D:\NU\New folder\AngkorColor\AngkorColor\bin\Microsoft.Web.Infrastructure.dll
+D:\NU\New folder\AngkorColor\AngkorColor\bin\Newtonsoft.Json.dll
+D:\NU\New folder\AngkorColor\AngkorColor\bin\Owin.dll
+D:\NU\New folder\AngkorColor\AngkorColor\bin\System.Web.Helpers.dll
+D:\NU\New folder\AngkorColor\AngkorColor\bin\System.Web.Mvc.dll
+D:\NU\New folder\AngkorColor\AngkorColor\bin\System.Web.Optimization.dll
+D:\NU\New folder\AngkorColor\AngkorColor\bin\System.Web.Razor.dll
+D:\NU\New folder\AngkorColor\AngkorColor\bin\System.Web.WebPages.Deployment.dll
+D:\NU\New folder\AngkorColor\AngkorColor\bin\System.Web.WebPages.dll
+D:\NU\New folder\AngkorColor\AngkorColor\bin\System.Web.WebPages.Razor.dll
+D:\NU\New folder\AngkorColor\AngkorColor\bin\WebGrease.dll
+D:\NU\New folder\AngkorColor\AngkorColor\bin\System.Web.Helpers.xml
+D:\NU\New folder\AngkorColor\AngkorColor\bin\System.Web.Mvc.xml
+D:\NU\New folder\AngkorColor\AngkorColor\bin\System.Web.Optimization.xml
+D:\NU\New folder\AngkorColor\AngkorColor\bin\System.Web.Razor.xml
+D:\NU\New folder\AngkorColor\AngkorColor\bin\System.Web.WebPages.xml
+D:\NU\New folder\AngkorColor\AngkorColor\bin\System.Web.WebPages.Deployment.xml
+D:\NU\New folder\AngkorColor\AngkorColor\bin\System.Web.WebPages.Razor.xml
+D:\NU\New folder\AngkorColor\AngkorColor\bin\Newtonsoft.Json.xml
+D:\NU\New folder\AngkorColor\AngkorColor\bin\Antlr3.Runtime.pdb
+D:\NU\New folder\AngkorColor\AngkorColor\bin\EntityFramework.xml
+D:\NU\New folder\AngkorColor\AngkorColor\bin\EntityFramework.SqlServer.xml
+D:\NU\New folder\AngkorColor\AngkorColor\bin\Microsoft.AspNet.Identity.Core.xml
+D:\NU\New folder\AngkorColor\AngkorColor\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\NU\New folder\AngkorColor\AngkorColor\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\NU\New folder\AngkorColor\AngkorColor\bin\Microsoft.Owin.xml
+D:\NU\New folder\AngkorColor\AngkorColor\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\NU\New folder\AngkorColor\AngkorColor\bin\Microsoft.Owin.Security.xml
+D:\NU\New folder\AngkorColor\AngkorColor\bin\Microsoft.Owin.Security.Facebook.xml
+D:\NU\New folder\AngkorColor\AngkorColor\bin\Microsoft.Owin.Security.Cookies.xml
+D:\NU\New folder\AngkorColor\AngkorColor\bin\Microsoft.Owin.Security.OAuth.xml
+D:\NU\New folder\AngkorColor\AngkorColor\bin\Microsoft.Owin.Security.Google.xml
+D:\NU\New folder\AngkorColor\AngkorColor\bin\Microsoft.Owin.Security.Twitter.xml
+D:\NU\New folder\AngkorColor\AngkorColor\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\NU\New folder\AngkorColor\AngkorColor\obj\Debug\AngkorColor.dll
+D:\NU\New folder\AngkorColor\AngkorColor\obj\Debug\AngkorColor.pdb
+D:\NU\New folder\AngkorColor\AngkorColor\bin\PagedList.dll
+D:\NU\New folder\AngkorColor\AngkorColor\bin\PagedList.xml
+D:\NU\New folder\AngkorColor\AngkorColor\bin\PagedList.Mvc.dll
+D:\NU\New folder\AngkorColor\AngkorColor\bin\PagedList.Mvc.xml
+D:\NU\New folder\AngkorColor\AngkorColor\obj\Debug\AngkorColor.csprojResolveAssemblyReference.cache
+D:\NU\Thesis\AngkorColor\AngkorColor\bin\PagedList.dll
+D:\NU\Thesis\AngkorColor\AngkorColor\bin\PagedList.Mvc.dll
+D:\NU\Thesis\AngkorColor\AngkorColor\bin\PagedList.xml
+D:\NU\Thesis\AngkorColor\AngkorColor\bin\PagedList.Mvc.xml
